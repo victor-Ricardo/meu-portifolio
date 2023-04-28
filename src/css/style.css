@@ -32,7 +32,7 @@
     font-size: 2rem;
     font-weight: 500;
     padding: 10px 20px;
-    transition: 0.2s;
+    transition: 0.2s all ease-in-out;
     border-radius: 50px;
     letter-spacing: 1px;
     user-select: none;
@@ -104,7 +104,10 @@
     bottom: 0;
 }
 
+/*******  FIM HEADER ******/
+
 /******* HOME ******/
+
 .home .full-screen{
     min-height: 86vh;
     padding: 50px 0;
@@ -152,6 +155,8 @@
     margin-bottom: 20px;
 }
 
+/******* FIM HOME ******/
+
 /***** SOBRE ******/
 
 .sobre-mim .img-sobre-mim{
@@ -177,12 +182,15 @@
 
 .sobre-mim .info-sobre-mim .botoes{
     margin-top: 50px;
+    transition: 0.5s all ease-in-out;
 }
 
 .sobre-mim .info-sobre-mim p{
     font-size: 1.8rem;
     margin-bottom: 20px;
 }
+
+/***** FIM SOBRE ******/
 
 /***** HABILIDADES ******/
 
@@ -219,6 +227,8 @@
 .habilidades .container-habilidades .habilidade i{
     font-size: 8rem;
 }
+
+/***** FIM HABILIDADES ******/
 
 /***** PROJETOS ******/
 
@@ -275,6 +285,8 @@
     padding-top: 10px;
 }
 
+/***** FIM PROJETOS ******/
+
 /***** FOOTER ******/
 
 .footer{
@@ -290,3 +302,5 @@
     letter-spacing: 2px;
     margin-bottom: 20px;
 }
+
+/***** FOOTER ******/
