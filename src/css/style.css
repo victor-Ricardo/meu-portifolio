@@ -1,0 +1,292 @@
+/******* HEADER ******/
+.header{
+    padding: 30px 151px;
+}
+
+.header .logo{
+    color: var(--cor-branca);
+    font-family: var(--fonte-secundaria);
+    font-size: var(--fonte-extra-grande);
+    border: 2px solid var(--cor-branca);
+    border-radius: 50%;
+    width: 65px;
+    height: 65px;
+    line-height: 59px;
+    text-align: center;
+    text-decoration: underline;
+    transition: 0.2s;
+}
+
+.header a:hover .logo {
+    color: var(--cor-primaria);
+    border: 2px solid var(--cor-primaria);
+}
+
+.header nav ul {
+    display: flex;
+}
+
+.header nav li a {
+    color: var(--cor-branca);
+    text-transform: capitalize;
+    font-size: 2rem;
+    font-weight: 500;
+    padding: 10px 20px;
+    transition: 0.2s;
+    border-radius: 50px;
+    letter-spacing: 1px;
+    user-select: none;
+}
+
+.header nav ul li a:hover{
+    background-color: var(--cor-primaria);
+}
+
+.header .menu{
+    display: none;
+    width: 60px;
+    height: 60px;
+    align-self: flex-end;
+}
+
+.header nav label{
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    color: var(--cor-branca);
+}
+
+.header .hamburguer{
+    background-color: var(--cor-branca);
+    color: var(--cor-branca);
+    position: relative;
+    display: block;
+    width: 30px;
+    height: 2px;
+    top: 29px;
+    left: 15px;
+    transition: 0.5s ease-in-out;
+}
+
+.header .hamburguer:before, .header .hamburguer:after{
+    background-color: var(--cor-branca);
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transition: 0.2s ease-in-out;
+}
+
+.header .hamburguer:before{
+    top: -10px;
+}
+
+.header .hamburguer:after{
+    bottom: -10px;
+}
+
+.header input {
+    display: none;
+}
+
+.header input:checked ~ label .hamburguer{
+    transform: rotate(45deg);
+}
+
+.header input:checked ~ label .hamburguer:before{
+    transform: rotate(90deg);
+    top: 0;
+}
+
+.header input:checked ~ label .hamburguer:after{
+    transform: rotate(90deg);
+    bottom: 0;
+}
+
+/******* HOME ******/
+.home .full-screen{
+    min-height: 86vh;
+    padding: 50px 0;
+}
+
+.home .text-home{
+    letter-spacing: 2px;
+}
+
+.home .text-home, .home .img-home{
+    flex: 0 0 50%;
+    max-width: 50%;
+    padding: 0 15px;
+}
+
+.home .img-home .img-box{
+    max-width: 450px;
+    margin: auto;
+    border-radius: 50%;
+}
+
+.home .img-home .img-box img{
+    width: 100%;
+    border-radius: 50%;
+    border: 20px solid transparent;
+}
+
+.home .text-home p{
+    font-family: var(--fonte-secundaria);
+    font-size: var(--fonte-grande);
+    margin-bottom: 10px;
+}
+
+.home .text-home h1{
+    font-family: var(--fonte-secundaria);
+    font-size: var(--fonte-gigante);
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.home .text-home h2{
+    font-family: var(--fonte-secundaria);
+    font-size: var(--fonte-grande);
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+
+/***** SOBRE ******/
+
+.sobre-mim .img-sobre-mim{
+    max-width: 40%;
+    padding: 0 15px;
+}
+
+.sobre-mim .img-sobre-mim .img-box{
+    padding: 15px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.sobre-mim .img-sobre-mim img{
+    border: 10px solid transparent;
+    border-radius: 5px;
+}
+
+.sobre-mim .info-sobre-mim{
+    max-width: 50%;
+    padding: 0 25px;    
+}
+
+.sobre-mim .info-sobre-mim .botoes{
+    margin-top: 50px;
+}
+
+.sobre-mim .info-sobre-mim p{
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+}
+
+/***** HABILIDADES ******/
+
+.habilidades .container-habilidades{
+    text-align: center;
+    justify-content: center;
+}
+
+.habilidades .container-habilidades .habilidade{
+    max-width: 350px;
+    padding: 40px 20px;
+}
+
+.habilidades .container-habilidades .habilidade:hover{
+    color: var(--cor-primaria);
+}
+
+.habilidades .container-habilidades .habilidade p,.habilidades .container-habilidades .habilidade h3,.habilidades .container-habilidades .habilidade .logo i{
+    transition: all 0.3s ease;
+}
+
+.habilidades .container-habilidades .habilidade h3{
+    color: var(--cor-primaria);
+    font-size: var(--fonte-extra-grande);
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.habilidades .container-habilidades .habilidade p{
+    font-size: 1.8rem;
+    font-family: var(--fonte-secundaria);
+}
+
+.habilidades .container-habilidades .habilidade i{
+    font-size: 8rem;
+}
+
+/***** PROJETOS ******/
+
+.projetos .container-projetos{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    margin: 0 auto;
+    grid-gap: 20px;
+    padding: 0 var(--mobile-padding);
+}
+
+.projetos .container-projetos .projeto{
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.projetos .container-projetos .projeto:hover,.projetos .container-projetos .projeto:hover .info-projeto{
+    opacity: 0.8;
+}
+
+.projetos .container-projetos .projeto img{
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    height: 100%;
+}
+
+.projetos .container-projetos .projeto .info-projeto{
+    padding: 20px;
+    background-color: var(--cor-fundo-escuro);
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+
+.projetos .container-projetos .projeto .info-projeto p:nth-child(2){
+    font-weight: 700;
+    margin-top: 10px;
+    font-size: 1.4rem;
+}
+
+.projetos .container-projetos .projeto h3{
+    font-size: 2rem;
+    font-weight: 500;
+    position: absolute;
+    bottom: 0;
+    background-color: var(--cor-fundo-escuro);
+    width: 100%;
+    padding-left: 20px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+/***** FOOTER ******/
+
+.footer{
+    margin-top: 7rem;
+    text-align: center;
+    padding: 5rem;
+}
+
+.footer h2{
+    font-family: var(--fonte-secundaria);
+    font-size: var(--fonte-normal);
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}

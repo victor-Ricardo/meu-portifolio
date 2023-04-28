@@ -74,15 +74,17 @@ body{
     text-transform: uppercase;
 }
 
-.botao{
+.sobre-mim .info-sobre-mim .botao{
     font-size: var(--fonte-grande);
     padding: 10px 20px;
     border-radius: 20px;
     transition: all 0.3s ease-in-out;
     background-color: var(--cor-primaria);
+    font-style: bold;
 }
 
-.botao:hover{
+.sobre-mim .info-sobre-mim .botao:hover{
     background-color: var(--cor-secundaria);
     color: var(--cor-branca);
+    transform: scale(1.3);
 }
